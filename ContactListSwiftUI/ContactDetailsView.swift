@@ -12,12 +12,34 @@ struct ContactDetailsView: View {
     let contact: Person
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            Image(systemName: "person.fill")
+                .resizable()
+                .frame(width: 150, height: 150)
+            HStack {
+                Image(systemName: "phone")
+                    .foregroundColor(.blue)
+                Text(contact.number)
+            }
+            HStack {
+                Image(systemName: "tray")
+                    .foregroundColor(.blue)
+                Text(contact.email)
+            }
+        }
+            .navigationTitle(Text("\(contact.fullName)"))
+            .listStyle(.plain)
     }
 }
 
+
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(contact: Person(name: "123", surname: "123", email: "123", number: "123"))
+        ContactDetailsView(contact: Person(
+            name: "123",
+            surname: "123",
+            email: "123",
+            number: "123"
+        ))
     }
 }
