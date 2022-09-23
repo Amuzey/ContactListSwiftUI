@@ -15,6 +15,7 @@
 		8A5E40C728DD962700C749F7 /* FirstContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E40C628DD962700C749F7 /* FirstContactListView.swift */; };
 		8A5E40CA28DD965600C749F7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E40C928DD965600C749F7 /* DataManager.swift */; };
 		8A5E40CC28DD967300C749F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E40CB28DD967300C749F7 /* Person.swift */; };
+		8A5E40CF28DDE7AE00C749F7 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E40CE28DDE7AE00C749F7 /* ContactDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8A5E40C628DD962700C749F7 /* FirstContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContactListView.swift; sourceTree = "<group>"; };
 		8A5E40C928DD965600C749F7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8A5E40CB28DD967300C749F7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8A5E40CE28DDE7AE00C749F7 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8A5E40B828DD954B00C749F7 /* ContentView.swift */,
 				8A5E40C628DD962700C749F7 /* FirstContactListView.swift */,
 				8A5E40C428DD960B00C749F7 /* SecondContactListView.swift */,
+				8A5E40CE28DDE7AE00C749F7 /* ContactDetailsView.swift */,
 				8A5E40CD28DD967600C749F7 /* Models */,
 				8A5E40C828DD963300C749F7 /* Services */,
 				8A5E40BA28DD954C00C749F7 /* Assets.xcassets */,
@@ -169,6 +172,7 @@
 				8A5E40C728DD962700C749F7 /* FirstContactListView.swift in Sources */,
 				8A5E40B928DD954B00C749F7 /* ContentView.swift in Sources */,
 				8A5E40CA28DD965600C749F7 /* DataManager.swift in Sources */,
+				8A5E40CF28DDE7AE00C749F7 /* ContactDetailsView.swift in Sources */,
 				8A5E40C528DD960B00C749F7 /* SecondContactListView.swift in Sources */,
 				8A5E40B728DD954B00C749F7 /* ContactListSwiftUIApp.swift in Sources */,
 			);
