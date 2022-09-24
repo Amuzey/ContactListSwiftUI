@@ -18,7 +18,11 @@ struct Person: Hashable {
         name + " " + surname
     }
     
-    static func getContact() -> [Person] {
+    static func getContact() -> Person {
+        Person(name: "Alexey", surname: "Ivanov", email: "ivanov@gmail.com", number: "8(912)345-67-89")
+    }
+    
+    static func getContacts() -> [Person] {
         
         var persons: [Person] = []
         

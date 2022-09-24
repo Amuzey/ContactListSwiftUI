@@ -28,6 +28,6 @@ struct FirstContactListView: View {
 
 struct FirstContactListView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstContactListView(contacts: Person.getContact())
+        FirstContactListView(contacts: Person.getContacts())
     }
 }

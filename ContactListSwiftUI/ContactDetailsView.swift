@@ -13,9 +13,13 @@ struct ContactDetailsView: View {
     
     var body: some View {
         List {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Spacer()
+            }
             HStack {
                 Image(systemName: "phone")
                     .foregroundColor(.blue)
@@ -35,11 +39,6 @@ struct ContactDetailsView: View {
 
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(contact: Person(
-            name: "123",
-            surname: "123",
-            email: "123",
-            number: "123"
-        ))
+        ContactDetailsView(contact: Person.getContact())
     }
 }

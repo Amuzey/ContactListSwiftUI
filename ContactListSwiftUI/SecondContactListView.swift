@@ -36,7 +36,7 @@ struct SecondContactListView: View {
     
     struct SecondContactListView_Previews: PreviewProvider {
         static var previews: some View {
-            SecondContactListView(contacts: Person.getContact())
+            SecondContactListView(contacts: Person.getContacts())
         }
     }
 }
