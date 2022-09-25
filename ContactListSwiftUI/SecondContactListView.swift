@@ -16,14 +16,10 @@ struct SecondContactListView: View {
             List(contacts, id: \.self) { contact in
                 Section {
                     HStack {
-                        Image(systemName: "phone")
-                            .foregroundColor(.blue)
-                        Text(contact.number)
+                        Label(contact.number, systemImage: "phone")
                     }
                     HStack {
-                        Image(systemName: "tray")
-                            .foregroundColor(.blue)
-                        Text(contact.email)
+                        Label(contact.email, systemImage: "tray")
                     }
                 } header: {
                     Text(contact.fullName)

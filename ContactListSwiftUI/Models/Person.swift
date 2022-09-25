@@ -18,10 +18,6 @@ struct Person: Hashable {
         name + " " + surname
     }
     
-    static func getContact() -> Person {
-        Person(name: "Alexey", surname: "Ivanov", email: "ivanov@gmail.com", number: "8(912)345-67-89")
-    }
-    
     static func getContacts() -> [Person] {
         
         var persons: [Person] = []
@@ -36,7 +32,7 @@ struct Person: Hashable {
             surnames.count,
             emails.count,
             numbers.count
-            )
+        )
         
         for index in 0..<iterationCount {
             let person = Person(
@@ -47,8 +43,8 @@ struct Person: Hashable {
             )
             persons.append(person)
         }
-            
-            
+        
+        
         return persons
     }
 }

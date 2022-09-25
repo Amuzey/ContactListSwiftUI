@@ -21,24 +21,20 @@ struct ContactDetailsView: View {
                 Spacer()
             }
             HStack {
-                Image(systemName: "phone")
-                    .foregroundColor(.blue)
-                Text(contact.number)
+                Label(contact.number, systemImage: "phone")
             }
             HStack {
-                Image(systemName: "tray")
-                    .foregroundColor(.blue)
-                Text(contact.email)
+                Label(contact.email, systemImage: "tray")
             }
         }
-            .navigationTitle(Text("\(contact.fullName)"))
-            .listStyle(.plain)
+        .navigationTitle(Text(contact.fullName))
+        .listStyle(.plain)
     }
 }
 
 
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(contact: Person.getContact())
+        ContactDetailsView(contact: Person.getContacts().first!)
     }
 }
